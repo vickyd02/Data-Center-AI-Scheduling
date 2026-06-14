@@ -89,3 +89,11 @@ The underlying simulation is built in **Julia**, utilizing the `JuMP` mathematic
    job_csv       = "/path/to/pai_job_table.csv"
    task_csv      = "/path/to/pai_task_table.csv"
    sensor_csv    = "/path/to/pai_sensor_table.csv"
+
+## 📬 Contact & Data Access
+
+Please contact [vdinov@stanford.edu](mailto:vdinov@stanford.edu) with questions or for data access for the Stanford CEF. 
+
+**Public Data Sources Used in this Simulation:**
+* **NREL Cambium 2024 Forecasts:** [https://data.nlr.gov/submissions/289](https://data.nlr.gov/submissions/289)
+* **Alibaba GPU Cluster Trace (v2020):** [https://github.com/alibaba/clusterdata/tree/master/cluster-trace-gpu-v2020](https://github.com/alibaba/clusterdata/tree/master/cluster-trace-gpu-v2020)
