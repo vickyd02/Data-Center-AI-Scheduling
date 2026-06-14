@@ -5,11 +5,11 @@ using DataFrames
 using XLSX
 
 # File paths
-stanford_file = "/Users/vicky/Downloads/Energy 291 Optimization/291 Optimization Project/Stanford CEF Data Request for Dinov and Blust.xlsx"
-nrel_file     = "/Users/vicky/Downloads/Energy 291 Optimization/291 Optimization Project/Cambium24_Workbook.xlsx"
-job_csv       = "/Users/vicky/Downloads/Energy 291 Optimization/291 Optimization Project/pai_job_table.csv"
-task_csv      = "/Users/vicky/Downloads/Energy 291 Optimization/291 Optimization Project/pai_task_table.csv"
-sensor_csv    = "/Users/vicky/Downloads/Energy 291 Optimization/291 Optimization Project/pai_sensor_table.csv"
+stanford_file = "PATH_TO_CEF"
+nrel_file     = "PATH_TO_CAMBIUM"
+job_csv       = "PATH_TO_CEF/pai_job_table.csv"
+task_csv      = "PATH_TO_CEF/pai_task_table.csv"
+sensor_csv    = "PATH_TO_CEF/pai_sensor_table.csv"
 
 # ------------------------------------------------------------------------------
 # STEP 1: EMPIRICAL DATA PROCESSING
@@ -291,8 +291,8 @@ df_baseline = run_annual_sim(true)   # Control Group (No Queueing)
 df_smart    = run_annual_sim(false)  # Optimized coordinated model
 
 # export to CSV
-CSV.write("/Users/vicky/Downloads/Energy 291 Optimization/291 Optimization Project/Baseline_Results_8760.csv", df_baseline)
-CSV.write("/Users/vicky/Downloads/Energy 291 Optimization/291 Optimization Project/Smart_Optimized_Results_8760.csv", df_smart)
+CSV.write("PATH_TO_PROJ/Baseline_Results_8760.csv", df_baseline)
+CSV.write("PATH_TO_PROJ/Smart_Optimized_Results_8760.csv", df_smart)
 
 println("\n======================================================================")
 println("SIMULATIONS COMPLETE.")
