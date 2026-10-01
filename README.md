@@ -1,6 +1,6 @@
 # Digital Twin Co-Optimization of District Energy Networks and Flexible AI Workloads
 
-**Authors:** Victoria Dinov, Jasmine Blust, Morgan Wyatt  
+**Authors:** Victoria Dinov  
 **Course:** ENERGY 291 · Stanford University  
 
 ## Overview
